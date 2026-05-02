@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #e8f8f5;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: transparent;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+@layer utilities {
+  .bg-app-hero {
+    background-image: radial-gradient(circle at top left, rgba(16, 185, 129, 0.22), transparent 30%),
+      linear-gradient(180deg, #071a13 0%, #03120c 100%);
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply rounded-[28px] border border-emerald-500/10 bg-slate-950/70 shadow-xl shadow-slate-950/20;
+  }
+}
