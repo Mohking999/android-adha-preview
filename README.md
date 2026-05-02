@@ -31,9 +31,10 @@ This project is configured to build with Vite and use relative paths for deploym
   ```bash
   npm run preview
   ```
-- To deploy with GitHub Pages:
+- To deploy with GitHub Pages to the `android-adha-preview` repository:
   ```bash
   npm run deploy
   ```
 
-> Note: Make sure this folder is a git repository and your repo is connected to GitHub.
+> Note: This uses the `kotlin` git remote, so the repository must be added as a remote named `kotlin`.
+> If your remote is named differently, update the deploy script in `package.json`.
