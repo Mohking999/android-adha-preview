@@ -186,14 +186,22 @@ function App() {
               <h3 className={`text-2xl font-semibold tracking-tight ${isDark ? 'text-slate-100' : 'text-slate-950'}`}>{locale.demoTitle}</h3>
               <p className={`${isDark ? 'text-slate-300' : 'text-slate-600'} leading-relaxed`}>{locale.demoDescription}</p>
             </div>
-            <div className={`overflow-hidden rounded-[26px] border border-emerald-500/15 ${isDark ? 'bg-slate-950' : 'bg-slate-100'}`}>
-              <iframe
-                className="aspect-video w-full"
-                src="https://www.youtube.com/embed/slrJIE10P3M?rel=0"
-                title="Demo video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
+            <div className={`mx-auto w-full max-w-[360px] rounded-[56px] border border-emerald-500/15 ${isDark ? 'bg-slate-950' : 'bg-slate-100'} p-4 shadow-xl shadow-slate-950/15`}>
+              <div className={`relative overflow-hidden rounded-[44px] border border-slate-700/20 ${isDark ? 'bg-slate-950' : 'bg-slate-200'}`}>
+                <div className="absolute inset-x-0 top-3 flex items-center justify-between px-4">
+                  <span className="h-2.5 w-2.5 rounded-full bg-slate-800 shadow-[0_0_0_4px_rgba(15,23,42,0.75)]" />
+                  <span className="h-2 w-12 rounded-full bg-slate-700/80" />
+                </div>
+                <div className="aspect-[1080/2400] w-full bg-black">
+                  <iframe
+                    className="h-full w-full"
+                    src="https://www.youtube.com/embed/slrJIE10P3M?rel=0"
+                    title="Demo video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
             </div>
           </section>
         </div>
