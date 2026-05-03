@@ -6,7 +6,6 @@ import screen3 from '../Screenshot_2026-04-27-11-51-05-396_com.example.myapplica
 import screen4 from '../Screenshot_2026-04-27-11-51-10-054_com.example.myapplication.jpg';
 import screen5 from '../Screenshot_2026-04-27-11-51-19-776_com.example.myapplication.jpg';
 import screen6 from '../Screenshot_2026-04-27-11-51-22-562_com.example.myapplication.jpg';
-import demoVideo from '../Screenrecorder-2026-04-26-19-27-45-957.mp4';
 
 const githubUrl = 'https://github.com/Mohking999/frontend-suggest';
 
@@ -187,8 +186,14 @@ function App() {
               <h3 className={`text-2xl font-semibold tracking-tight ${isDark ? 'text-slate-100' : 'text-slate-950'}`}>{locale.demoTitle}</h3>
               <p className={`${isDark ? 'text-slate-300' : 'text-slate-600'} leading-relaxed`}>{locale.demoDescription}</p>
             </div>
-            <div>
-              <video controls preload="metadata" poster={screen1} src={demoVideo} className={`w-full rounded-[26px] border border-emerald-500/15 ${isDark ? 'bg-slate-950' : 'bg-slate-100'}`} />
+            <div className={`overflow-hidden rounded-[26px] border border-emerald-500/15 ${isDark ? 'bg-slate-950' : 'bg-slate-100'}`}>
+              <iframe
+                className="aspect-video w-full"
+                src="https://www.youtube.com/embed/slrJIE10P3M?rel=0"
+                title="Demo video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
             </div>
           </section>
         </div>
