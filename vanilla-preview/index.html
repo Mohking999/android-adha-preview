@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotlin Android UI Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="background-blob"></div>
+    
+    <div class="container">
+        <div class="outer-panel">
+            <!-- Header Section -->
+            <div class="header-top">
+                <div class="hero-content">
+                    <p class="eyebrow" data-i18n="heroEyebrow">Kotlin Android UI Preview</p>
+                    <h1 data-i18n="heroTitle">Enterprise-ready UI presentation</h1>
+                    <p class="description" data-i18n="heroDescription">Preview this Kotlin-built Android app interface with screenshots and a widescreen demo video tailored for developers, product owners, and enterprise stakeholders.</p>
+                </div>
+
+                <div class="controls-panel">
+                    <div class="control-group">
+                        <p class="control-label" data-i18n="languageLabel">Choose language</p>
+                        <div class="btn-group" id="language-switcher">
+                            <button class="btn active" data-lang="en">English</button>
+                            <button class="btn" data-lang="fr">Français</button>
+                            <button class="btn" data-lang="ar">العربية</button>
+                        </div>
+                    </div>
+
+                    <div class="theme-bar">
+                        <p class="control-label" data-i18n="themeLabel">Theme</p>
+                        <button class="btn" id="theme-toggle" data-i18n="themeLight">Light mode</button>
+                    </div>
+
+                    <a href="https://github.com/Mohking999/frontend-suggest" target="_blank" class="github-btn" data-i18n="githubButton">View GitHub repo</a>
+                    <p class="note" data-i18n="githubNote">Source and app ideas on GitHub</p>
+                </div>
+            </div>
+
+            <!-- Meta Info Panel -->
+            <header class="meta-panel">
+                <div class="meta-main">
+                    <h2 data-i18n="heroTitle">Enterprise-ready UI presentation</h2>
+                    <p data-i18n="heroDescription">Preview this Kotlin-built Android app interface with screenshots and a widescreen demo video tailored for developers, product owners, and enterprise stakeholders.</p>
+                </div>
+                <div class="meta-card">
+                    <strong data-i18n="heroMetaTitle">Preview for review</strong>
+                    <p data-i18n="heroMetaBody">Static React + TypeScript presentation app shows the Android UI flow and helps teams validate design and functionality.</p>
+                </div>
+            </header>
+
+            <!-- Screenshots Section -->
+            <section class="gallery-section">
+                <h3 data-i18n="screenshots">App Screenshots</h3>
+                <div class="gallery-grid" id="image-gallery">
+                    <!-- Dynamic Items -->
+                </div>
+            </section>
+
+            <!-- Video Section -->
+            <section class="video-section">
+                <div class="video-info">
+                    <h3 data-i18n="demoTitle">Demo Video</h3>
+                    <p data-i18n="demoDescription">Watch the app flow in a standard widescreen layout designed for developer and enterprise review.</p>
+                </div>
+                <div class="device-frame">
+                    <div class="device-inner">
+                        <div class="device-notch">
+                            <span class="sensor"></span>
+                            <span class="speaker"></span>
+                        </div>
+                        <div class="video-container">
+                            <video 
+                                src="assets/demo.mp4" 
+                                controls 
+                                muted 
+                                autoplay 
+                                loop 
+                                playsinline
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
