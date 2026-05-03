@@ -23,6 +23,8 @@ try {
 
   exec(`git init "${distDir}"`);
   exec(`cd "${distDir}" && git checkout -b ${branch}`);
+  exec(`cd "${distDir}" && git config user.name "github-actions[bot]"`);
+  exec(`cd "${distDir}" && git config user.email "github-actions[bot]@users.noreply.github.com"`);
   writeFileSync(join(distDir, '.nojekyll'), '');
   exec(`cd "${distDir}" && git add .`);
   exec(`cd "${distDir}" && git commit -m "Deploy to GitHub Pages"`);
