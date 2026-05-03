@@ -36,5 +36,5 @@ This project is configured to build with Vite and use relative paths for deploym
   npm run deploy
   ```
 
-> Note: This uses the `kotlin` git remote, so the repository must be added as a remote named `kotlin`.
-> If your remote is named differently, update the deploy script in `package.json`.
+> Note: This uses the `kotlin` git remote and deploys to the `gh-pages` branch.
+> Make sure the target GitHub repo is configured to serve Pages from the `gh-pages` branch.
